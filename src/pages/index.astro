@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
+import LinkedIn from '../components/Icons/LinkedIn.astro';
+import GitHub from '../components/Icons/GitHub.astro';
+import Twitter from '../components/Icons/X.astro';
+import SocialPill from '../components/Icons/SocialPill.astro';
+---
+
+<Layout 
+	title="Portfolio David Franco - Desarollador web Fullstack"
+	description='David Elias Franco Velez, Desarollador web Fullstack y Desarollador de Videojuegos. Estudiante de EAFIT'
+	>
+	<main>
+		<section class="w-full lg:w-[740px] mx-auto py-44">
+			<img 
+				class="rounded-full size-12 mb-4"
+				src="https://avatars.githubusercontent.com/u/77490521?s=400&u=" 
+				alt="David Photo"/>
+			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+				Hey, I'm Dav <a 
+					href="https://www.linkedin.com/in/david-elias-franco-velez-75254b242/"
+					target="_blank"
+					rel="noopener"
+					class="flex justify-center items-center"
+					>
+					<Badge>Open to work</Badge></div>
+				</a>
+			</h1>
+			<h2 class="text-2xl text-wrap">
+				<span>Estudiante de <span class="text-cyan-500">EAFIT</span> pregrado de Ingenieria de Sistemas</span> 
+				<span class="text-blue-300">Desarrollador Fullstack 👨‍💻</span>
+				<span class="text-green-200/90">Actualmente estoy viviendo en Medellin, Colombia.</span> 
+				<span class="opacity-75">En esta pagina presentare mis proyectos personales.</span>
+			</h2>
+
+			<section class="flex gap-x-4 mt-6">
+
+				<SocialPill href="https://www.linkedin.com/in/david-elias-franco-velez-75254b242">
+					<LinkedIn class="size-6" />
+					LinkedIn
+				</SocialPill>
+
+				<SocialPill href="https://github.com/Daavvvvvv">
+					<GitHub class="size-6" />
+					GitHub
+				</SocialPill>
+
+				<SocialPill href="https://twitter.com/qswfgu">
+					<Twitter class="size-6" />
+					Twitter
+			</section>
+		</section>
+
+	</main>
+</Layout>
