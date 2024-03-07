@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    purge: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+    content: [
+        './src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
+
+    ],
     darkMode: 'class', // or 'media'
     theme: {
         extend: {

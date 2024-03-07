@@ -5,9 +5,11 @@ import SectionContainer from '../components/SectionContainer.astro';
 import LinkedIn from '../Icons/LinkedIn.astro';
 import GitHub from '../Icons/GitHub.astro';
 import Twitter from '../Icons/X.astro';
+import Gmail from '../Icons/gmail.astro';
 import SocialPill from '../Icons/SocialPill.astro';
 import Experience from '../components/Experience.astro';
 import ExperienceIcon from '../Icons/ExperienceIcon.astro';
+import DavsPhoto from '../components/davidImage.astro';
 ---
 
 <Layout 
@@ -16,11 +18,8 @@ import ExperienceIcon from '../Icons/ExperienceIcon.astro';
 	>
 	<main>
 		<SectionContainer class="py-44 pb-20">
-			<img 
-				class="rounded-full size-12 mb-4"
-				src="https://avatars.githubusercontent.com/u/77490521?s=400&u=" 
-				alt="David Photo"/>
-			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+			<DavsPhoto />
+			<h1 class="text-white text-5xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-10">
 				Hey, soy David <a 
 					href="https://www.linkedin.com/in/david-elias-franco-velez-75254b242/"
 					target="_blank"
@@ -52,16 +51,23 @@ import ExperienceIcon from '../Icons/ExperienceIcon.astro';
 				<SocialPill href="https://twitter.com/qswfgu">
 					<Twitter class="size-6" />
 					Twitter
+
+				</SocialPill>
+
+				<SocialPill href="mailto:davidvelez006@gmail.com">
+					<Gmail class="size-6" />
+					Gmail
+				</SocialPill>
 			</section>
 		</SectionContainer>
 
-		<SectionContainer>
+		<SectionContainer id="experience">
 			<h2 class="text-2xl font-bold mb-6 flex gap-x-3 items-center">
 				<ExperienceIcon class="size-8" />
 				Experiencia laboral
 			</h2>
 			<Experience />
-		<SectionContainer>
+		</SectionContainer>
 
 	</main>
 </Layout>
